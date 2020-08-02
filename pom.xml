@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.benefactor</groupId>
+    <groupId>com.github.benefactor-org</groupId>
     <artifactId>valve</artifactId>
     <version>1.0.0</version>
-    <name>${project.groupId}:${project.artifactId}</name>
+    <name>Valve</name>
     <description>Valve is a simple to integrate sampling and code flow control library, which can perform sampling on an unknown size of identifiers.
         It was developed to fullfill the need to perform percentage based roll out of a certain feature for users.</description>
     <url>https://github.com/benefactor-org/valve</url>
@@ -32,11 +32,16 @@
     <developers>
         <developer>
             <name>Raj Talekar</name>
-            <email>rajtalekar24@gmail.com</email>
+            <email>benefactororg@gmail.com</email>
             <organization>Benefactor</organization>
             <organizationUrl>https://github.com/benefactor-org/valve</organizationUrl>
         </developer>
     </developers>
+    <scm>
+        <connection>scm:git:git://github.com/benefactor-org/valve.git</connection>
+        <developerConnection>scm:git:ssh://github.com:benefactor-org/valve.git</developerConnection>
+        <url>https://github.com/benefactor-org/valve.git</url>
+    </scm>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
