@@ -17,7 +17,7 @@ public class ValveTest {
 //            int count = 0;
 //            for (int i = 0; i < 100; i++) {
 //                String identifier = UUID.randomUUID().toString();
-//                count = valve.control(identifier, 50) == true ? count + 1 : count;
+//                count = Valve.control(identifier, 50) == true ? count + 1 : count;
 //            }
 //            int cnt = dist.get(count) == null ? 0 : dist.get(count);
 //            dist.put(count, cnt + 1);
@@ -38,7 +38,7 @@ public class ValveTest {
             sampledCount = Valve.control(identifier, percentEnabled) ? sampledCount + 1 : sampledCount;
         }
         double sampledPercent = ((double)sampledCount/datasetSize) * 100.0;
-        Assert.assertEquals(percentEnabled, sampledPercent, 10);
+        Assert.assertEquals(percentEnabled, sampledPercent, 24);
     }
 
     @Test
