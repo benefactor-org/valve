@@ -16,7 +16,7 @@ public class Valve {
         }
         byte[] hash = digest.digest(identifier.getBytes(StandardCharsets.UTF_8));
         String hexedString = convertBytesToHexedString(hash);
-        Integer decimal = Integer.valueOf(Integer.toString(Integer.parseInt(hexedString.substring(Math.max(hexedString.length() - 3, 0)), 16), 10));
+        Integer decimal = Integer.parseInt(hexedString.substring(Math.max(hexedString.length() - 3, 0)), 16);
         return (decimal % 100) < percentEnabled;
     }
 
