@@ -50,11 +50,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-[maven]:http://search.maven.org/#search|gav|1|g:"com.netflix.hystrix"%20AND%20a:"hystrix-core"
+[maven]:https://search.maven.org/artifact/com.github.benefactor-org/valve/1.0.0/jar"
 [maven img]:https://maven-badges.herokuapp.com/maven-central/com.netflix.hystrix/hystrix-core/badge.svg
-
-[release]:https://github.com/netflix/hystrix/releases
-[release img]:https://img.shields.io/github/release/netflix/hystrix.svg
 
 [license]:LICENSE-2.0.txt
 [license img]:https://img.shields.io/github/license/benefactor-org/valve
