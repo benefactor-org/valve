@@ -78,7 +78,7 @@ limitations under the License.
 
 
 [maven]:https://search.maven.org/artifact/com.github.benefactor-org/valve/1.0.0/jar"
-[maven img]:https://maven-badges.herokuapp.com/maven-central/com.netflix.hystrix/hystrix-core/badge.svg
+[maven img]:https://maven-badges.herokuapp.com/maven-central/com.github.benefactor-org/valve/badge.svg
 
 [license]:LICENSE-2.0.txt
 [license img]:https://img.shields.io/github/license/benefactor-org/valve
