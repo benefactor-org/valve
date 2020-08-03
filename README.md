@@ -1,4 +1,4 @@
-<img src="https://github.com/benefactor-org/valve/blob/master/valve-logo.png">
+<img height="100px" width="100px" src="https://github.com/benefactor-org/valve/blob/master/valve-logo.png">
 
 # Valve: Sampling and feature release control for better customer experience.
 
