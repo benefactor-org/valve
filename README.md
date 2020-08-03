@@ -11,12 +11,12 @@ Valve is a simple to integrate sampling and code flow control library, which can
 
 ## Full Documentation
 
-See the [Wiki](https://github.com/Netflix/Hystrix/wiki/) for java documentation and how to use.
+See the [Wiki](https://github.com/benefactor-org/valve/wiki/) for java documentation and how to use.
 
 
 ## Communication
 
-- [GitHub Issues](https://github.com/Netflix/Hystrix/issues)
+- [GitHub Issues](https://github.com/benefactor-org/valve/issues)
 
 ## What does it do?
 
@@ -28,9 +28,36 @@ Given a unique identifier and roll out percentage, decides weather to be sampled
 
 You can configure Valve with all your features at the application start up, and dynamically enable or disable it during runtime.
 
+## How to import?
+
+Add below mentioned dependency to your pom.xml to install using Maven build automation tool.
+
+    <dependency>
+      <groupId>com.github.benefactor-org</groupId>
+      <artifactId>valve</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+## How to use?
+
+You can perform sampling using any unique identifier. For instance using emailid of users you perform a percent feature roll out.
+
+    ...
+    ...
+    String email = user.getEmail();                 // Unique identifier.
+    int percentEnabled = 25;                        // For how many percent of your user base should the new feature be enabled.
+    if(Valve.control(email, percentEnabled)) {
+       performNewLogin(user);
+    } else {
+      performOldLogin(user);
+    }
+    ...
+    ...
+ 
+
 ## Bugs and Feedback
 
-For bugs, questions and discussions please use the [GitHub Issues](https://github.com/Netflix/Hystrix/issues).
+For bugs, questions and discussions please use the [GitHub Issues](https://github.com/benefactor-org/valve/issues).
 
  
 ## LICENSE
